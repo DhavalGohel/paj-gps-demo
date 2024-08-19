@@ -23,7 +23,7 @@ export class HomePage implements OnInit {
 
   public lastPoints: IDeviceLastPoint[] = [];
   public map: maplibregl.Map;
-  public zoom = 12;
+  public zoom = 9;
   public loading: boolean = true;
   constructor() { }
 
@@ -110,9 +110,6 @@ export class HomePage implements OnInit {
   addControls() {
     // Add zoom controls
     this.map.addControl(new maplibregl.NavigationControl());
-
-    // Add scale control
-    this.map.addControl(new maplibregl.ScaleControl(), 'bottom-right');
 
     // Add full-screen control
     this.map.addControl(new maplibregl.FullscreenControl());
