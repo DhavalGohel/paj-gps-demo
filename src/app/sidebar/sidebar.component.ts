@@ -39,12 +39,10 @@ export class SidebarComponent implements OnInit {
   private menu = inject(MenuController);
   menuItems: Array<{ title: string, url: string }> = [];
 
-  constructor() { console.log("CALLED") }
+  constructor() {}
 
   ngOnInit() {
-    console.log("CALLED")
     this.authService.isAuthenticated.subscribe(isAuthenticated => {
-      console.log(isAuthenticated)
       if (isAuthenticated) {
         this.loadMenuItems();
       }
