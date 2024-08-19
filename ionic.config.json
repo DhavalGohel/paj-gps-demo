@@ -1,0 +1,7 @@
+{
+  "name": "paj-gps-demo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
